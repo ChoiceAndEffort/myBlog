@@ -12,7 +12,7 @@ module.exports = {
         // logo: '/img/logo.png',
         nav: [  //导航栏
             { text: '首页', link: '/' },
-            { text: 'html', link: '/html_docs/' },
+            { text: 'Html', link: '/html_docs/' },
             { text: 'JS', link: '/js_docs/' },
             { text: 'CSS', link: '/css_docs/' },
             { text: 'Vue', link: '/vue_docs/' },
@@ -31,6 +31,11 @@ module.exports = {
             '/html_docs/': [
                 '',
                 'html5新增标签'
+            ],
+            '/js_docs/': [
+                '',
+                '统计字符出现次数',
+                '排序'
             ],
             //   '/2020/': [
             //       ['/2020/5/', '5月份'],

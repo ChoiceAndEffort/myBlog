@@ -12,8 +12,8 @@ features:
  - title: DO
    details: '制定计划,按章执行,撸起袖子加油干,选定方向使劲干'
 
-#  - title: CHECK
-#    details: '实时检查,纠偏'
+ - title: CHECK
+   details: '实时检查,纠偏'
 
  - title: ACTION
    details: '总结,沉淀'
