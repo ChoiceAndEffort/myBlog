@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>组件传参 | LG的个人博客</title>
+    <meta name="generator" content="VuePress 1.5.3">
+    
+    <meta name="description" content="前端开发 lhs的个人博客">
+    <link rel="preload" href="/myBlog/assets/css/0.styles.d37ee02b.css" as="style"><link rel="preload" href="/myBlog/assets/js/app.c20b9a9d.js" as="script"><link rel="preload" href="/myBlog/assets/js/2.96070ec4.js" as="script"><link rel="preload" href="/myBlog/assets/js/20.663eb358.js" as="script"><link rel="prefetch" href="/myBlog/assets/js/10.acbfcff6.js"><link rel="prefetch" href="/myBlog/assets/js/11.720fb422.js"><link rel="prefetch" href="/myBlog/assets/js/12.bef7b00e.js"><link rel="prefetch" href="/myBlog/assets/js/13.ef1cae67.js"><link rel="prefetch" href="/myBlog/assets/js/14.724a5876.js"><link rel="prefetch" href="/myBlog/assets/js/15.f5103537.js"><link rel="prefetch" href="/myBlog/assets/js/16.ccb7611a.js"><link rel="prefetch" href="/myBlog/assets/js/17.77de6431.js"><link rel="prefetch" href="/myBlog/assets/js/18.89799f02.js"><link rel="prefetch" href="/myBlog/assets/js/19.67625fdb.js"><link rel="prefetch" href="/myBlog/assets/js/3.7113585e.js"><link rel="prefetch" href="/myBlog/assets/js/4.91869876.js"><link rel="prefetch" href="/myBlog/assets/js/5.8c3ffe82.js"><link rel="prefetch" href="/myBlog/assets/js/6.6c632d2d.js"><link rel="prefetch" href="/myBlog/assets/js/7.0acccaf7.js"><link rel="prefetch" href="/myBlog/assets/js/8.1bf6581f.js"><link rel="prefetch" href="/myBlog/assets/js/9.9fb9b3af.js">
+    <link rel="stylesheet" href="/myBlog/assets/css/0.styles.d37ee02b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/myBlog/" class="home-link router-link-active"><!----> <span class="site-name">LG的个人博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/myBlog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/myBlog/html_docs/" class="nav-link">
+  Html
+</a></div><div class="nav-item"><a href="/myBlog/js_docs/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><a href="/myBlog/css_docs/" class="nav-link">
+  CSS
+</a></div><div class="nav-item"><a href="/myBlog/vue_docs/" class="nav-link router-link-active">
+  Vue
+</a></div><div class="nav-item"><a href="/myBlog/node_docs/" class="nav-link">
+  Node
+</a></div><div class="nav-item"><a href="https://github.com/leigong421/myBlog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/myBlog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/myBlog/html_docs/" class="nav-link">
+  Html
+</a></div><div class="nav-item"><a href="/myBlog/js_docs/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><a href="/myBlog/css_docs/" class="nav-link">
+  CSS
+</a></div><div class="nav-item"><a href="/myBlog/vue_docs/" class="nav-link router-link-active">
+  Vue
+</a></div><div class="nav-item"><a href="/myBlog/node_docs/" class="nav-link">
+  Node
+</a></div><div class="nav-item"><a href="https://github.com/leigong421/myBlog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/myBlog/vue_docs/" aria-current="page" class="sidebar-link">vue篇</a></li><li><a href="/myBlog/vue_docs/组件传参.html" class="active sidebar-link">组件传参</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/myBlog/vue_docs/组件传参.html#父子组件通信" class="sidebar-link">父子组件通信</a></li><li class="sidebar-sub-header"><a href="/myBlog/vue_docs/组件传参.html#爷，子，孙通信可以使用-attrs-和-listener" class="sidebar-link">爷，子，孙通信可以使用$attrs,和$listener</a></li><li class="sidebar-sub-header"><a href="/myBlog/vue_docs/组件传参.html#parent和-children" class="sidebar-link">$parent和$children</a></li><li class="sidebar-sub-header"><a href="/myBlog/vue_docs/组件传参.html#provide和inject" class="sidebar-link">provide和inject</a></li><li class="sidebar-sub-header"><a href="/myBlog/vue_docs/组件传参.html#兄弟组件间通信" class="sidebar-link">兄弟组件间通信</a></li></ul></li><li><a href="/myBlog/vue_docs/开发规范.html" class="sidebar-link">开发规范</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="组件传参"><a href="#组件传参" class="header-anchor">#</a> 组件传参</h1> <h2 id="父子组件通信"><a href="#父子组件通信" class="header-anchor">#</a> 父子组件通信</h2> <ul><li>通过props进行传参,</li> <li>$emit触发父组件的方</li></ul> <h2 id="爷，子，孙通信可以使用-attrs-和-listener"><a href="#爷，子，孙通信可以使用-attrs-和-listener" class="header-anchor">#</a> 爷，子，孙通信可以使用$attrs,和$listener</h2> <ul><li>在子组件上使用v-bind=$attrs,v-on=$listener</li> <li>然后在孙组件按照正常组件接收参数，和触发方法</li></ul> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>C</span> <span class="token attr-name">v-bind</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>$attrs<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-on</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>$listeners<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>C</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="parent和-children"><a href="#parent和-children" class="header-anchor">#</a> $parent和$children</h2> <blockquote><p>可以使用$parent和$children获取父组件和子组件的值</p></blockquote> <h2 id="provide和inject"><a href="#provide和inject" class="header-anchor">#</a> provide和inject</h2> <ul><li>父组件中通过provider来提供变量，然后在子组件中通过inject来注入变量。不论子组件有多深，只要调用了inject那么就可以注入provider中的数据。而不是局限于只能从当前父组件的prop属性来获取数据，只要在父组件的生命周期内，子组件都可以调用。</li> <li>提示：provide 和 inject 绑定并不是可响应的。这是刻意为之的。然而，如果你传入了一个可监听的对象，那么其对象的 property 还是可响应的。</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>Vue<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span><span class="token string">'child'</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+     inject<span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'for'</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token comment">//得到父组件传递过来的数据</span>
+     <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">{</span>
+         mymessage<span class="token operator">:</span><span class="token keyword">this</span><span class="token punctuation">.</span>for
+        <span class="token punctuation">}</span>
+     <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      template<span class="token operator">:</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+        &lt;div&gt;
+         &lt;input type=&quot;tet&quot; v-model=&quot;mymessage&quot;&gt;
+       &lt;/div&gt;
+   })
+   Vue.component('parent',{
+     template:</span><span class="token template-punctuation string">`</span></span>
+       <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+         <span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span class="token keyword">this</span> is parent compoent<span class="token operator">!</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span>
+       <span class="token operator">&lt;</span>child<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>child<span class="token operator">&gt;</span>
+       <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+     `<span class="token punctuation">,</span>
+     provide<span class="token operator">:</span><span class="token punctuation">{</span>
+       <span class="token keyword">for</span><span class="token operator">:</span><span class="token string">'test'</span>
+     <span class="token punctuation">}</span><span class="token punctuation">,</span>
+     <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+       <span class="token keyword">return</span> <span class="token punctuation">{</span>
+         message<span class="token operator">:</span><span class="token string">'hello'</span>
+       <span class="token punctuation">}</span>
+     <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="兄弟组件间通信"><a href="#兄弟组件间通信" class="header-anchor">#</a> 兄弟组件间通信</h2> <div class="language-js extra-class"><pre class="language-js"><code>methods<span class="token operator">:</span><span class="token punctuation">{</span><span class="token operator">|</span>
+    bus<span class="token punctuation">.</span><span class="token function">$on</span><span class="token punctuation">(</span><span class="token string">'方法名'</span><span class="token punctuation">,</span> <span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+          
+<span class="token function">beforeDestroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token comment">// 取消监听'方法名'事件</span>
+     bus<span class="token punctuation">.</span><span class="token function">$off</span><span class="token punctuation">(</span><span class="token string">'方法名'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code>methods<span class="token operator">:</span><span class="token punctuation">{</span>
+  bus<span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'方法名'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li><p>eventBus中$on()不会自动销毁，触发次数依次增加。</p></li> <li><p>组件销毁，$on注册事件还存在，并且继续以销毁之前的完整状态触发；</p></li> <li><p>所以需要在beforeDestory中用eventBus.$off手动销毁注册的事件</p></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/myBlog/vue_docs/" class="prev router-link-active">
+        vue篇
+      </a></span> <span class="next"><a href="/myBlog/vue_docs/开发规范.html">
+        开发规范
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/myBlog/assets/js/app.c20b9a9d.js" defer></script><script src="/myBlog/assets/js/2.96070ec4.js" defer></script><script src="/myBlog/assets/js/20.663eb358.js" defer></script>
+  </body>
+</html>
