@@ -16,7 +16,7 @@ module.exports = {
             { text: 'JS', link: '/js_docs/' },
             { text: 'CSS', link: '/css_docs/' },
             { text: 'Vue', link: '/vue_docs/' },
-            { text: 'React', link: '/react_docs/' },
+            { text: 'Node', link: '/node_docs/' },
             //   {
             //       text: '2020',
             //       ariLabel: '2020',
@@ -25,17 +25,33 @@ module.exports = {
             //           { text: 'June', link: '/2020/6/' }
             //       ]
             //   },
-            { text: 'github', link: 'https://github.com/zeroonbush/blog.git' }
+            { text: 'github', link: 'https://github.com/leigong421/myBlog' }
         ],
         sidebar: {  //侧边拦
             '/html_docs/': [
                 '',
-                'html5新增标签'
+                'html5新增标签',
+                'html5存储'
+            ],
+            '/css_docs/': [
+                '',
+                '字符样式的区分',
             ],
             '/js_docs/': [
                 '',
                 '统计字符出现次数',
-                '排序'
+                '排序',
+                '数组扁平化',
+                '数组去重'
+            ],
+            '/vue_docs/': [
+                '',
+                '组件传参',
+                '开发规范'
+            ],
+            '/node_docs/': [
+                '',
+                'nodejs底层原理介绍',
             ],
             //   '/2020/': [
             //       ['/2020/5/', '5月份'],
