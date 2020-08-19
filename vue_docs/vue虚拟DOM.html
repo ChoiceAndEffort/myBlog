@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vuex虚拟DOM | LG的个人博客</title>
+    <meta name="generator" content="VuePress 1.5.3">
+    
+    <meta name="description" content="前端开发 lhs的个人博客">
+    <link rel="preload" href="/myBlog/assets/css/0.styles.d37ee02b.css" as="style"><link rel="preload" href="/myBlog/assets/js/app.85a08699.js" as="script"><link rel="preload" href="/myBlog/assets/js/2.96070ec4.js" as="script"><link rel="preload" href="/myBlog/assets/js/22.0fd657e7.js" as="script"><link rel="prefetch" href="/myBlog/assets/js/10.ae3e464e.js"><link rel="prefetch" href="/myBlog/assets/js/11.0ad0dedd.js"><link rel="prefetch" href="/myBlog/assets/js/12.5089603f.js"><link rel="prefetch" href="/myBlog/assets/js/13.32627d39.js"><link rel="prefetch" href="/myBlog/assets/js/14.9fdaf178.js"><link rel="prefetch" href="/myBlog/assets/js/15.cf167910.js"><link rel="prefetch" href="/myBlog/assets/js/16.ef6cda83.js"><link rel="prefetch" href="/myBlog/assets/js/17.11ea6d88.js"><link rel="prefetch" href="/myBlog/assets/js/18.c22f4566.js"><link rel="prefetch" href="/myBlog/assets/js/19.6f0cbc0b.js"><link rel="prefetch" href="/myBlog/assets/js/20.d886ea35.js"><link rel="prefetch" href="/myBlog/assets/js/21.3c81f274.js"><link rel="prefetch" href="/myBlog/assets/js/23.efc23d6f.js"><link rel="prefetch" href="/myBlog/assets/js/24.f931eeb8.js"><link rel="prefetch" href="/myBlog/assets/js/3.c97cc464.js"><link rel="prefetch" href="/myBlog/assets/js/4.91869876.js"><link rel="prefetch" href="/myBlog/assets/js/5.690b919f.js"><link rel="prefetch" href="/myBlog/assets/js/6.5310de6d.js"><link rel="prefetch" href="/myBlog/assets/js/7.7a2db35a.js"><link rel="prefetch" href="/myBlog/assets/js/8.8e414d3e.js"><link rel="prefetch" href="/myBlog/assets/js/9.f3fba563.js">
+    <link rel="stylesheet" href="/myBlog/assets/css/0.styles.d37ee02b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/myBlog/" class="home-link router-link-active"><!----> <span class="site-name">LG的个人博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/myBlog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/myBlog/html_docs/" class="nav-link">
+  Html
+</a></div><div class="nav-item"><a href="/myBlog/js_docs/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><a href="/myBlog/css_docs/" class="nav-link">
+  CSS
+</a></div><div class="nav-item"><a href="/myBlog/vue_docs/" class="nav-link router-link-active">
+  Vue
+</a></div><div class="nav-item"><a href="/myBlog/node_docs/" class="nav-link">
+  Node
+</a></div><div class="nav-item"><a href="https://github.com/leigong421/myBlog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/myBlog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/myBlog/html_docs/" class="nav-link">
+  Html
+</a></div><div class="nav-item"><a href="/myBlog/js_docs/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><a href="/myBlog/css_docs/" class="nav-link">
+  CSS
+</a></div><div class="nav-item"><a href="/myBlog/vue_docs/" class="nav-link router-link-active">
+  Vue
+</a></div><div class="nav-item"><a href="/myBlog/node_docs/" class="nav-link">
+  Node
+</a></div><div class="nav-item"><a href="https://github.com/leigong421/myBlog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/myBlog/vue_docs/" aria-current="page" class="sidebar-link">vue篇</a></li><li><a href="/myBlog/vue_docs/组件传参.html" class="sidebar-link">组件传参</a></li><li><a href="/myBlog/vue_docs/开发规范.html" class="sidebar-link">开发规范</a></li><li><a href="/myBlog/vue_docs/vue的响应式.html" class="sidebar-link">VUE响应式底层原理</a></li><li><a href="/myBlog/vue_docs/vue虚拟DOM.html" class="active sidebar-link">Vuex虚拟DOM</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/myBlog/vue_docs/vue虚拟DOM.html#真实dom和其解析流程" class="sidebar-link">真实DOM和其解析流程</a></li><li class="sidebar-sub-header"><a href="/myBlog/vue_docs/vue虚拟DOM.html#为啥会有vue虚拟dom-js操作真实dom的代价！" class="sidebar-link">为啥会有Vue虚拟DOM, JS操作真实DOM的代价！</a></li><li class="sidebar-sub-header"><a href="/myBlog/vue_docs/vue虚拟DOM.html#虚拟dom" class="sidebar-link">虚拟DOM</a></li><li class="sidebar-sub-header"><a href="/myBlog/vue_docs/vue虚拟DOM.html#diff算法" class="sidebar-link">Diff算法</a></li><li class="sidebar-sub-header"><a href="/myBlog/vue_docs/vue虚拟DOM.html#遍历的时候为啥要使用key" class="sidebar-link">遍历的时候为啥要使用Key</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vuex虚拟dom"><a href="#vuex虚拟dom" class="header-anchor">#</a> Vuex虚拟DOM</h1> <h2 id="真实dom和其解析流程"><a href="#真实dom和其解析流程" class="header-anchor">#</a> 真实DOM和其解析流程</h2> <blockquote><p>浏览器渲染引擎工作流程都差不多，大致分为5步，创建DOM树——创建StyleRules——创建Render树——布局Layout——绘制Painting</p></blockquote> <ul><li>第一步，用HTML分析器，分析HTML元素，构建一颗DOM树(标记化和树构建)。</li> <li>第二步，用CSS分析器，分析CSS文件和元素上的inline样式，生成页面的样式表。</li> <li>第三步，将DOM树和样式表，关联起来，构建一颗Render树(这一过程又称为Attachment)。每个DOM节点都有attach方法，接受样式信息，返回一个render对象(又名renderer)。这些render对象最终会被构建成一颗Render树。</li> <li>第四步，有了Render树，浏览器开始布局，为每个Render树上的节点确定一个在显示屏上出现的精确坐标。</li> <li>第五步，Render树和节点显示坐标都有了，就调用每个节点paint方法，把它们绘制出来。</li></ul> <h2 id="为啥会有vue虚拟dom-js操作真实dom的代价！"><a href="#为啥会有vue虚拟dom-js操作真实dom的代价！" class="header-anchor">#</a> 为啥会有Vue虚拟DOM, JS操作真实DOM的代价！</h2> <blockquote><p>用我们传统的开发模式，原生JS或JQ操作DOM时，浏览器会从构建DOM树开始从头到尾执行一遍流程。在一次操作中，我需要更新10个DOM节点，浏览器收到第一个DOM请求后并不知道还有9次更新操作，因此会马上执行流程，最终执行10次。例如，第一次计算完，紧接着下一个DOM更新请求，这个节点的坐标值就变了，前一次计算为无用功。计算DOM节点坐标值等都是白白浪费的性能。即使计算机硬件一直在迭代更新，操作DOM的代价仍旧是昂贵的，频繁操作还是会出现页面卡顿，影响用户体验。</p></blockquote> <h2 id="虚拟dom"><a href="#虚拟dom" class="header-anchor">#</a> 虚拟DOM</h2> <ul><li>Web界面由DOM树(树的意思是数据结构)来构建，当其中一部分发生变化时，其实就是对应某个DOM节点发生了变化，</li> <li>虚拟DOM就是为了解决浏览器性能问题而被设计出来的。</li> <li>虚拟DOM是通过JS语法模拟DOM创建的JS对象放在内存中,</li> <li>操作内存中的JS对象的速度显然要更快，等更新完成后，再将最终的JS对象映射成真实的DOM，交由浏览器去绘制。</li></ul> <h2 id="diff算法"><a href="#diff算法" class="header-anchor">#</a> Diff算法</h2> <blockquote><p>真实DOM树和虚拟DOM树,  两棵树如果完全比较时间复杂度是O(n^3),要实现这么低的时间复杂度，意味着只能平层的比较两棵树的节点，&gt; 放弃了深度遍历。这样做，似乎牺牲掉了一定的精确性来换取速度，但考虑到现实中前端页面通常也不会跨层移动DOM元素，这样做是最优的。
+在实际代码中，会对新旧两棵树进行一个深度的遍历，每个节点都会有一个标记。每遍历到一个节点就把该节点和新的树进行对比，如果有差异就记录到一个对象中。
+平层Diff比较，只有以下4种情况：
+1、节点类型变了
+2、节点类型一样，仅仅属性或属性值变了
+3、文本变了，
+4、移动／增加／删除 子节点，</p></blockquote> <ul><li>Diff算法只是为了虚拟DOM和真实DOM更高效的比较替换.</li></ul> <h2 id="遍历的时候为啥要使用key"><a href="#遍历的时候为啥要使用key" class="header-anchor">#</a> 遍历的时候为啥要使用Key</h2> <ul><li>https://www.cnblogs.com/wuqun/p/13201558.html</li></ul> <blockquote></blockquote> <p>在DOM节点的遍历的 时候,如果新增,删除,移动DOM节点,如果不增加Key的话,会按照修改后虚拟DOM节点就重新遍历,对于那些没有变动的DOM节点会重新卸载,然后装载到新的位置,渲染比较损耗性能,如果增加key以后,虚拟DOM会识别这个节点的key没有变动,然后不去重新熏染,只对更改的节点进行渲染,这样性能会比较好.</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/myBlog/vue_docs/vue的响应式.html" class="prev">
+        VUE响应式底层原理
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/myBlog/assets/js/app.85a08699.js" defer></script><script src="/myBlog/assets/js/2.96070ec4.js" defer></script><script src="/myBlog/assets/js/22.0fd657e7.js" defer></script>
+  </body>
+</html>

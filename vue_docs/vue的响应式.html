@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VUE响应式底层原理 | LG的个人博客</title>
+    <meta name="generator" content="VuePress 1.5.3">
+    
+    <meta name="description" content="前端开发 lhs的个人博客">
+    <link rel="preload" href="/myBlog/assets/css/0.styles.d37ee02b.css" as="style"><link rel="preload" href="/myBlog/assets/js/app.85a08699.js" as="script"><link rel="preload" href="/myBlog/assets/js/2.96070ec4.js" as="script"><link rel="preload" href="/myBlog/assets/js/21.3c81f274.js" as="script"><link rel="prefetch" href="/myBlog/assets/js/10.ae3e464e.js"><link rel="prefetch" href="/myBlog/assets/js/11.0ad0dedd.js"><link rel="prefetch" href="/myBlog/assets/js/12.5089603f.js"><link rel="prefetch" href="/myBlog/assets/js/13.32627d39.js"><link rel="prefetch" href="/myBlog/assets/js/14.9fdaf178.js"><link rel="prefetch" href="/myBlog/assets/js/15.cf167910.js"><link rel="prefetch" href="/myBlog/assets/js/16.ef6cda83.js"><link rel="prefetch" href="/myBlog/assets/js/17.11ea6d88.js"><link rel="prefetch" href="/myBlog/assets/js/18.c22f4566.js"><link rel="prefetch" href="/myBlog/assets/js/19.6f0cbc0b.js"><link rel="prefetch" href="/myBlog/assets/js/20.d886ea35.js"><link rel="prefetch" href="/myBlog/assets/js/22.0fd657e7.js"><link rel="prefetch" href="/myBlog/assets/js/23.efc23d6f.js"><link rel="prefetch" href="/myBlog/assets/js/24.f931eeb8.js"><link rel="prefetch" href="/myBlog/assets/js/3.c97cc464.js"><link rel="prefetch" href="/myBlog/assets/js/4.91869876.js"><link rel="prefetch" href="/myBlog/assets/js/5.690b919f.js"><link rel="prefetch" href="/myBlog/assets/js/6.5310de6d.js"><link rel="prefetch" href="/myBlog/assets/js/7.7a2db35a.js"><link rel="prefetch" href="/myBlog/assets/js/8.8e414d3e.js"><link rel="prefetch" href="/myBlog/assets/js/9.f3fba563.js">
+    <link rel="stylesheet" href="/myBlog/assets/css/0.styles.d37ee02b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/myBlog/" class="home-link router-link-active"><!----> <span class="site-name">LG的个人博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/myBlog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/myBlog/html_docs/" class="nav-link">
+  Html
+</a></div><div class="nav-item"><a href="/myBlog/js_docs/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><a href="/myBlog/css_docs/" class="nav-link">
+  CSS
+</a></div><div class="nav-item"><a href="/myBlog/vue_docs/" class="nav-link router-link-active">
+  Vue
+</a></div><div class="nav-item"><a href="/myBlog/node_docs/" class="nav-link">
+  Node
+</a></div><div class="nav-item"><a href="https://github.com/leigong421/myBlog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/myBlog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/myBlog/html_docs/" class="nav-link">
+  Html
+</a></div><div class="nav-item"><a href="/myBlog/js_docs/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><a href="/myBlog/css_docs/" class="nav-link">
+  CSS
+</a></div><div class="nav-item"><a href="/myBlog/vue_docs/" class="nav-link router-link-active">
+  Vue
+</a></div><div class="nav-item"><a href="/myBlog/node_docs/" class="nav-link">
+  Node
+</a></div><div class="nav-item"><a href="https://github.com/leigong421/myBlog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/myBlog/vue_docs/" aria-current="page" class="sidebar-link">vue篇</a></li><li><a href="/myBlog/vue_docs/组件传参.html" class="sidebar-link">组件传参</a></li><li><a href="/myBlog/vue_docs/开发规范.html" class="sidebar-link">开发规范</a></li><li><a href="/myBlog/vue_docs/vue的响应式.html" class="active sidebar-link">VUE响应式底层原理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/myBlog/vue_docs/vue的响应式.html#运行原理" class="sidebar-link">运行原理</a></li><li class="sidebar-sub-header"><a href="/myBlog/vue_docs/vue的响应式.html#数组响应式原理" class="sidebar-link">数组响应式原理</a></li></ul></li><li><a href="/myBlog/vue_docs/vue虚拟DOM.html" class="sidebar-link">Vuex虚拟DOM</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue响应式底层原理"><a href="#vue响应式底层原理" class="header-anchor">#</a> VUE响应式底层原理</h1> <ul><li>Observer类负责将复杂类型的变量转化成响应式数据，转化为响应式数据的变量都会带有 '<strong>ob</strong>'  属性，所以 '<strong>ob</strong>' 属性可以作为判断响应式数据的标识。</li> <li>watcher:当我们侦测到数据变化的时候,需要通知谁?需要用到这个数据的地方有自定义的,也有可能是模板上的,我们把这些地方统称为watcher,可以理解成依赖;</li> <li>Dep的作用在与收集依赖,当侦测到数据发生变化时,dep会通知他收集的所有watcher;</li></ul> <h2 id="运行原理"><a href="#运行原理" class="header-anchor">#</a> 运行原理</h2> <ul><li><p>数据data进过observer处理变成影响式数据，数据的getter与setter被拦截。</p></li> <li><p>每当有watcher到data读取数据时，会被getter拦截，watcher被当做依赖被dep收集。</p></li> <li><p>每当Data的数据发生变化时会被setter拦截，setter会通知Dep,Dep再通知它收集的所有watcher, watcher再调用它的回调函数。</p></li></ul> <h2 id="数组响应式原理"><a href="#数组响应式原理" class="header-anchor">#</a> 数组响应式原理</h2> <ul><li><p>不会触发set方法的数组方法有push(),pop(),shift(),unshift(),splice(),sort(),revese(),(vue把这些方法定义为<strong>变异方法</strong>--会修改原来的数组的方法)</p></li> <li><p><strong>非变异方法</strong> 比如:filter(),concat(),slice(),他们不会修改原始数组而会返回一个新的数组,</p></li> <li><p>因为变异方法无法触发set方法所以无法劫持到数据的变化,vue的做法是对这些方法重写来达到数据劫持;</p></li> <li><p>defineProperty不能检测数组长度的变化,准确的说是通过改变length而增加的长度不能监测到;</p></li> <li><p>对于数组新增的属性,需要手动再初始化,</p></li> <li><p>数组的变化侦测实现原理有所不同，当我们通过key读取数组时，一样会被getter拦截。</p></li> <li><p>但是由于Object.defineProperty的setter只能做到对每个key进行拦截，当数组调用原生方法如push或pop时，数组值发生变化，Object.defineProperty却拦截不到，所以数组值的变化侦测只能通过重写数组的原生方法实现拦截。(如上边说的变异方法)</p></li> <li><p>由于setter方法只能监听的每个key对应的值变化，如果Object新增或者删除一个key, setter是侦测不到，所以不会触发依赖。</p></li> <li><p>由于Array是通过重写Array原型方法触发依赖，所以如果直接修改数组下的元素，是不会触发依赖的。</p></li> <li><p>针对vue侦测方案的缺陷，vue提供了vm.$set与vm.$del, 这两个API会在方法内调用dep.notify，所以通过API进行赋值可以触发依赖。</p></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/myBlog/vue_docs/开发规范.html" class="prev">
+        开发规范
+      </a></span> <span class="next"><a href="/myBlog/vue_docs/vue虚拟DOM.html">
+        Vuex虚拟DOM
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/myBlog/assets/js/app.85a08699.js" defer></script><script src="/myBlog/assets/js/2.96070ec4.js" defer></script><script src="/myBlog/assets/js/21.3c81f274.js" defer></script>
+  </body>
+</html>
