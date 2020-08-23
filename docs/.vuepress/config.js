@@ -31,7 +31,8 @@ module.exports = {
             '/html_docs/': [
                 '',
                 'html5新增标签',
-                'html5存储'
+                'html5存储',
+                '浏览器缓存'
             ],
             '/css_docs/': [
                 '',
